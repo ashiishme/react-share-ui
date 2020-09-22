@@ -1,0 +1,49 @@
+.scrip-ishare {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.scrip-ishare div {
+  margin: 0 0.5rem;
+}
+
+.ishare-content h2 {
+  margin: 0.3rem auto;
+  font-size: small;
+  text-align: center;
+  color: #b5b5b5;
+}
+
+.ishare-price {
+  font-size: 0.8rem;
+  font-weight: bold;
+  color: #b5b5b5;
+}
+
+.ishare-price span {
+  font-size: 1rem;
+  color: #03a9f4;
+}
+
+.ishare-logo {
+  font-weight: bold;
+  font-size: 1.3rem;
+  color: #8bc34a;
+}
+
+.ishare-tagline {
+  text-align: center;
+}
+
+.ishare-sp {
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+.ishare-tagline,
+.ishare-equity {
+  font-size: 0.7rem;
+  font-weight: 600;
+}

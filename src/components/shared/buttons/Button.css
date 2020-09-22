@@ -1,0 +1,15 @@
+.btn,
+.btn:active {
+  display: block;
+  margin: 0.5rem auto;
+  border: 2px solid #ff9800;
+  border-radius: 5px;
+  width: 60px;
+  height: 30px;
+  color: #ff9800;
+  text-transform: uppercase;
+  font-weight: bold;
+  background: #ffffff;
+  cursor: pointer;
+  outline: 0;
+}

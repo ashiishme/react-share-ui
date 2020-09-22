@@ -1,0 +1,82 @@
+.shared-wrap {
+  font-size: 0.75rem;
+  font-weight: 600;
+  width: 155px;
+}
+
+.shared-value,
+.shared-percent-value {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.shared-value {
+  margin-bottom: 0.5rem;
+}
+
+.shared-percent-value {
+  color: #b5b5b5;
+}
+
+.shared-value-amount,
+.shared-percent {
+  text-align: right;
+}
+
+.percent-bar-container {
+  width: 100%;
+  margin-top: 1rem;
+}
+
+.percent-bar,
+.percent-bar-colored {
+  border-radius: 5px;
+  height: 8px;
+}
+
+.percent-bar {
+  position: relative;
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.percent-bar-colored {
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  background: black;
+  width: 20%;
+  background: #4caf50;
+}
+
+.percent-bar-colored-inc {
+  left: 50%;
+  background: black;
+  width: 20%;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  background: #4caf50;
+}
+
+.percent-bar-colored-dec {
+  right: 50%;
+  background: black;
+  width: 20%;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  background: #f44336;
+}
+
+.percent-bar-colored-inc:before,
+.percent-bar-colored-dec:before {
+  content: '';
+  display: block;
+  background: #000;
+  width: 1px;
+  height: 15px;
+  margin-top: -3.5px;
+}
+
+.percent-bar-colored-dec:before {
+  margin-left: auto;
+}

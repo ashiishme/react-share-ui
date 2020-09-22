@@ -1,13 +1,86 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto',
+        'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans',
+        'Helvetica Neue', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background: #eceff1;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+        monospace;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+ul li {
+    list-style: none;
+}
+
+p {
+    margin: 0;
+}
+
+.app {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 2rem;
+}
+
+.container {
+    width: 95%;
+}
+
+.share-data {
+    width: 73%;
+}
+
+.share-visual {
+    position: relative;
+    width: 25%;
+    background: #fff;
+    overflow: hidden;
+    height: 300px;
+    border-radius: 10px;
+}
+
+.share-portfolio {
+    padding: 0 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.recharts-wrapper {
+    position: absolute !important;
+    top: 0;
+}
+
+.scrip-item {
+    margin-bottom: 1.5rem;
+}
+
+.card-container {
+    background: #ffffff;
+    display: flex;
+    flex-direction: row;
+    padding: 0.5rem;
+    border-radius: 10px;
+    justify-content: center;
+}
+
+.card {
+    background: #f9f9f9;
+    padding: 0.5rem 1rem;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    align-items: center;
+    border-radius: 10px;
 }

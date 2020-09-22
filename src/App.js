@@ -1,26 +1,29 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import List from "./components/List";
+import Chart from "./components/Chart";
+import { ShareContext } from "./hooks/useShareContext";
+import useAsyncTask from "./hooks/useAsyncTask";
 
-function App() {
+export default function App() {
+  const response = useAsyncTask('https://ashiish.me/idart/data/shares.json');
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app container">
+      <div className="share-data">
+        <ul className="scrip-list">
+          {response?.shares.map((item) => 
+          <ShareContext.Provider value={item} key={item.id}>
+            <List />
+          </ShareContext.Provider>
+          )}
+        </ul>
+      </div>
+      <div className="share-visual">
+        <div className="share-portfolio">
+          <h3>Portfolio</h3>
+          <span>Asset-wise</span>
+        </div>
+        <Chart/>
+      </div>
     </div>
   );
 }
-
-export default App;
