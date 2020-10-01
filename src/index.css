@@ -38,7 +38,8 @@ p {
 }
 
 .share-data {
-    width: 73%;
+    /* The width was causing the extra space to appear */
+    /* width: 73%; */
 }
 
 .share-visual {
@@ -79,8 +80,7 @@ p {
 .card {
     background: #f9f9f9;
     padding: 0.5rem 1rem;
-    margin-left: 0.5rem;
-    margin-right: 0.5rem;
+    margin: 0.5rem;
     align-items: center;
     border-radius: 10px;
 }
