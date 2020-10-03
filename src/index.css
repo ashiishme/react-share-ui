@@ -6,6 +6,7 @@ body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     background: #eceff1;
+    box-sizing: border-box;
 }
 
 code {
@@ -38,13 +39,13 @@ p {
 }
 
 .share-data {
-    /* The width was causing the extra space to appear */
-    /* width: 73%; */
+    width: 75vw;
 }
 
 .share-visual {
     position: relative;
     width: 25%;
+    margin: 0 10px;
     background: #fff;
     overflow: hidden;
     height: 300px;
