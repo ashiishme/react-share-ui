@@ -80,7 +80,13 @@ p {
 .card {
     background: #f9f9f9;
     padding: 0.5rem 1rem;
-    margin: 0.5rem;
+    margin:  0 0.5rem;
     align-items: center;
     border-radius: 10px;
+}
+.card:first-of-type {
+    margin-left: 0;
+}
+.card:last-of-type{
+    margin-right: 0;
 }
