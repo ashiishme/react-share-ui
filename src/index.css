@@ -84,3 +84,9 @@ p {
     align-items: center;
     border-radius: 10px;
 }
+.card:first-of-type {
+    margin-left: 0;
+}
+.card:last-of-type{
+    margin-right: 0;
+}
