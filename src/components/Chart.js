@@ -52,6 +52,7 @@ const Chart = () => {
                     onClick={openGS}
                     wrapperStyle={{
                         paddingLeft: '20px',
+                        cursor: 'pointer',
                     }}
                     height={10}
                     iconType="circle"
