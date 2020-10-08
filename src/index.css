@@ -31,6 +31,7 @@ p {
     flex-direction: row;
     justify-content: space-between;
     padding: 2rem;
+    flex-wrap: wrap;
 }
 
 .container {
@@ -40,15 +41,19 @@ p {
 .share-data {
     /* The width was causing the extra space to appear */
     /* width: 73%; */
+    flex: 3;
+    margin: 7px;
 }
 
 .share-visual {
     position: relative;
-    width: 25%;
+    /*width: 25%;*/
     background: #fff;
     overflow: hidden;
     height: 300px;
     border-radius: 10px;
+    flex: 1;
+    align-self: flex-start;
 }
 
 .share-portfolio {
@@ -56,7 +61,6 @@ p {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
 }
 
 .recharts-wrapper {
@@ -80,13 +84,18 @@ p {
 .card {
     background: #f9f9f9;
     padding: 0.5rem 1rem;
-    margin:  0 0.5rem;
+    margin: 0 0.5rem;
     align-items: center;
     border-radius: 10px;
 }
 .card:first-of-type {
     margin-left: 0;
 }
-.card:last-of-type{
+.card:last-of-type {
     margin-right: 0;
+}
+
+.scrip-list{
+    margin-left: -3%;
+    margin-right: 2%;
 }
